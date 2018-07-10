@@ -48,7 +48,7 @@ Because since March I’ve been working with *AWS Lambdas*, *S3* and *DDB*
 # [fit]  *DAZN*
 ## The Netflix of Sport
 
-![inline 50%](images/dazn_logo_black.png)
+![inline 30%](images/dazn_new_logo_white.png)
 
 - Monthly subscription
 - All Sports Included
