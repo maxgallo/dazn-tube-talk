@@ -6,13 +6,11 @@
 
 # Who Am I ?
 
-NAME: _Max_ [^1]
-
-SURNAME: *Gallo*
+NAME: *Max* [^1] *Gallo*
 
 TWITTER: *@_maxgallo*
 
-SPECS: *Biped*, *Pasta eater*, *Work at* DAZN, *JavaScript developer*, *mediocre iOS Developer*, *Functional & Reactive programming learner*
+SPECS: *Biped*, *Pasta eater*, *Principal Engineer @* DAZN, *JavaScript developer*, *mediocre iOS Developer*, *Functional & Reactive programming learner*
 
 [^1]: or Massimiliano if you like Italian spelling challenges
 
@@ -20,19 +18,7 @@ SPECS: *Biped*, *Pasta eater*, *Work at* DAZN, *JavaScript developer*, *mediocre
 
 ---
 
-## Why am I talking in the _AWS User Group UK_ ?
-
----
-
-Because since March I’ve been working with *AWS Lambdas*, *S3* and *DDB* 
-
-# to create the *DAZN 2.0* <br/>_**Front End**_ build pipeline.
-
-^ Front End
-
----
-
-## What I'm going to _**talk**_ about
+#[fit] What I'm going to _**talk**_ about
 
 - Introduction to *DAZN*
 - Why we needed a *Build Pipeline*
@@ -173,8 +159,7 @@ Custom implementation, using *Docker Swarm* and *Bash*
 ### It builds the project code, without knowing *how* to build it.
  
 1. Download the project code from S3
-- Read configurations from the project code
-- Build the project
+- Build the project with a generic script (eg. `yarn build`)
 - Pack the build output files and upload to S3
 
 ---
@@ -193,7 +178,6 @@ Custom implementation, using *Docker Swarm* and *Bash*
 - Optimise JavaScript files
 - Optimise Html and CSS as well.
 - Pack the optimised files and upload them to S3
-- This code is now ready to be used
 
 ---
 
