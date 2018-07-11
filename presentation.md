@@ -10,11 +10,12 @@ NAME: *Max* [^1] *Gallo*
 
 TWITTER: *@_maxgallo*
 
-SPECS: *Biped*, *Pasta eater*, *Principal Engineer @* DAZN, *JavaScript developer*, *mediocre iOS Developer*, *Functional & Reactive programming learner*
+SPECS: *Biped*, *Pasta eater*, *Principal Engineer @* DAZN,<br/> *Front-End lover*, *I use spaces - not tabs*
 
 [^1]: or Massimiliano if you like Italian spelling challenges
 
 ^ Italian Spelling Challenge
+Baiped /ˈbaɪ.ped/
 
 ---
 
@@ -31,10 +32,11 @@ SPECS: *Biped*, *Pasta eater*, *Principal Engineer @* DAZN, *JavaScript develope
 
 ![right fit](images/dazn.jpg)
 
-# [fit]  *DAZN*
-## The Netflix of Sport
 
-![inline 30%](images/dazn_new_logo_white.png)
+![inline 40%](images/dazn_new_logo_white.png)
+
+__*The Netflix of Sport*__
+<br />
 
 - Monthly subscription
 - All Sports Included
@@ -48,8 +50,7 @@ SPECS: *Biped*, *Pasta eater*, *Principal Engineer @* DAZN, *JavaScript develope
 
 
 # _DAZN_ **2.0**
-
-### Multiple _**Single Page Applications**_,
+### Multiple _**Single Page Applications**_
 ### tailored per country and device
 
 ^ Minimum amount of code / assets
@@ -72,13 +73,24 @@ We _**just**_ need to build 5 * 5 * 10 = *250 SPA*
 
 ---
 
-# What we want to achieve
+Are we going to manually create _250 variations of the same app_ ?
+
+---
+
+
+#[fit] NOPE
+
+---
+
+# The __*Solution*__ should be
 
 <br />
 
 - Easy to *maintain* and *adopt*
 - *Not always on* - It's a build system after all
 - *Infrastructure as code*
+
+^ Replicated on different environments
 
 ---
 
@@ -116,9 +128,8 @@ We _**just**_ need to build 5 * 5 * 10 = *250 SPA*
 
 <br/>
 
-- One repo per *Target*
-- Each *Target Repo* contains all the chapters
-- GitHub webhook to a Lambda functions to trigger the next step
+- One repository per *Target*
+- *GitHub webhook* to trigger the first step
 
 ---
 
@@ -129,7 +140,7 @@ Custom implementation, using *Docker Swarm* and *Bash*
 1. Checkout target project from GitHub
 - Run Unit Tests
 - Run Static Analysis
-- Compress everything and store on S3
+- Compress everything and store it on S3
 
 ---
 
@@ -255,7 +266,7 @@ Truth is, that the _**Tube**_ is more like this
 
 # *#* Tech
 
-- Frameworks & Language agnostic
+- Framework & Language agnostic
 - Bounded Context
 - Reactive Flow
 
@@ -268,9 +279,9 @@ Truth is, that the _**Tube**_ is more like this
 
 # [fit] Thanks
 
+slides: *[github.com/maxgallo/dazn-tube-talk](https://github.com/maxgallo/dazn-tube-talk)*
 twitter: *@_maxgallo*
-slides: *[github.com/maxgallo/lambdas-in-dazn](https://github.com/maxgallo/lambdas-in-dazn)*
-medium: *[https://medium.com/dazn-tech](https://medium.com/dazn-tech)*
+more: *[maxgallo.io](http://maxgallo.io)*
 
 
 
