@@ -1,6 +1,6 @@
 ## How to build _**250**_ single page applications with _AWS Lambdas_
 
-^ Hi Everybody, I'm really happy to be here
+^ Hi Everybody, I'm very excited to talking here today, big room... no pressure
 
 ---
 
@@ -22,11 +22,11 @@ Baiped /ˈbaɪ.ped/
 #[fit] What I'm going to _**talk**_ about
 
 - Introduction to *DAZN*
-- Why we needed a *Build Pipeline*
-- How it works
+- Why we needed *250 Single Page Application* 🤷‍♀️
+- How to create them
 - Takeaways
 
-^ Important understanding the product
+^ - In order to understand a solution, we need to understand the problem first
 
 ---
 
@@ -44,14 +44,23 @@ __*The Netflix of Sport*__
 
 ^ Launched Aug 2016
 
-^ For DAZN pronunciation, I suggested "EA Sports" Man
 
 ---
 
+# _DAZN_  **1.0**
+
+- Single Codebase
+- Single build per Country
+- Low deploy confidence
+- Hard to update
+
+---
 
 # _DAZN_ **2.0**
 ### Multiple _**Single Page Applications**_
 ### tailored per country and device
+
+^ Multiple codebases
 
 ^ Minimum amount of code / assets
 
@@ -73,19 +82,22 @@ We _**just**_ need to build 5 * 5 * 10 = *250 SPA*
 
 ---
 
-Are we going to manually create _250 variations of the same app_ ?
+Are we going to _manually create_ 250 variations of the same app ?
 
 ---
 
 
 #[fit] NOPE
 
+^ - We need to find a solution
+
 ---
 
-# The __*Solution*__ should be
+# The ideal __*Solution*__
 
 <br />
 
+- Allow granular *builds* and *deployments*
 - Easy to *maintain* and *adopt*
 - *Not always on* - It's a build system after all
 - *Infrastructure as code*
@@ -95,7 +107,7 @@ Are we going to manually create _250 variations of the same app_ ?
 ---
 
 <br />
-# [fit] Welcome to: _**The Tube**_
+# [fit] Introducing: _**The Tube**_
 
 ![inline 200%](pdf/tube.pdf)
 
@@ -106,12 +118,12 @@ Are we going to manually create _250 variations of the same app_ ?
 ---
 
 # [fit] Moving in the _**Tube**_
-# *Functional* & *Reactive*
 
  - Each [^2] *Station* is an *AWS Lambda*
  - Each *Station* is Stateless and Atomic
  - Each *Station* is triggered by event reaction
 
+# *Functional* & *Reactive*
 
 ![right fit](pdf/fromto0.pdf)
 
@@ -129,7 +141,9 @@ Are we going to manually create _250 variations of the same app_ ?
 <br/>
 
 - One repository per *Target*
-- *GitHub webhook* to trigger the first step
+- *GitHub webhooks* to trigger the first step
+
+^ - Webhooks are a way to notify an external web server when certain actions occur on a repository
 
 ---
 
@@ -149,7 +163,7 @@ Custom implementation, using *Docker Swarm* and *Bash*
 
 ---
 
-# Inside _**Prepare**_
+# Inside _**Prepare**_ *Lambda*
 <br />
 
 1. Download the project code from S3
@@ -258,9 +272,8 @@ Truth is, that the _**Tube**_ is more like this
 - Relatively *low costs*
 - You can use different Cloud Vendors
 
-^ Growing team
-
-^ Almost free tier
+^ - Growing team
+- Almost free tier
 
 ---
 
@@ -268,11 +281,12 @@ Truth is, that the _**Tube**_ is more like this
 
 - Framework & Language agnostic
 - Bounded Context
+- Flexible
 - Reactive Flow
 
-^ Builder doesn't know how to build 
-^ Atomic Build Output
-^ No Orchestration
+^ - Builder doesn't know how to build
+- Easy to add / remove stations
+- No Orchestration (SQS / SNS possible upgrades)
 
 ---
 
@@ -283,5 +297,5 @@ slides: *[github.com/maxgallo/dazn-tube-talk](https://github.com/maxgallo/dazn-t
 twitter: *@_maxgallo*
 more: *[maxgallo.io](http://maxgallo.io)*
 
-
+^ No Orchestration
 
