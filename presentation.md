@@ -51,8 +51,15 @@ __*The Netflix of Sport*__
 
 - Single Codebase
 - Single build per Country
-- Low deploy confidence
-- Hard to update
+
+---
+
+# _DAZN_  **1.0**
+
+- Single Codebase
+- Single build per Country
+- _Low deploy confidence_
+- _Less frequent deploys_
 
 ---
 
