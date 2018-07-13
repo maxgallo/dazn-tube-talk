@@ -159,7 +159,7 @@ Are we going to _manually create_ 250 variations of the same app ?
 Custom implementation, using *Docker Swarm* and *Bash*
  
 1. Checkout target project from GitHub
-- Run Unit Tests
+- Run Tests
 - Run Static Analysis
 - Compress everything and store it on S3
 
